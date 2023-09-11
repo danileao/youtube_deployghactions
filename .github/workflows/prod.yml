@@ -32,4 +32,4 @@ jobs:
             - name: Pull image from docker hub
               run: docker pull danieleleaoe/deploy_ghactions:latest
             - name: Run docker container
-              run: docker run -d -p 8080:8080 --name deploy_ghactions danieleleaoe/deploy_ghactions
+              run: docker run -d -p 8080:8080 -e DATABASE_USERNAME=${{secrets.DATABASE_USERNAME}} -e DATABASE_PASSWORD='${{secrets.DATABASE_PASSWORD}}' -e DATABASE_URL=${{secrets.DATABASE_URL}} --name deploy_ghactions danieleleaoe/deploy_ghactions
