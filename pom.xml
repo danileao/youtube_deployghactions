@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>br.com.danieleleaoe</groupId>
 	<artifactId>deploy_ghactions</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>1.0.0</version>
 	<name>deploy_ghactions</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>
